@@ -26,16 +26,16 @@ public class Car extends Vehicle {
         System.out.println("its a constructor of car class");
     }
 
-    //  public static void main(String[] args) {
-    //     Car scorpio = new Car();
-    //      scorpio.wheelcount = 4;
-    //      scorpio.price = 13.6;
-    //      scorpio.model = "s11";
-    //     System.out.println(scorpio.price);
-       //   System.out.println(scorpio.wheelcount);
-     //     System.out.println(scorpio.model);
-       //    scorpio.start();
- //    }
+      public static void main(String[] args) {
+         Car scorpio = new Car();
+          scorpio.wheelcount = 4;
+          scorpio.price = 13.6;
+          scorpio.model = "s11";
+         System.out.println(scorpio.price);
+          System.out.println(scorpio.wheelcount);
+          System.out.println(scorpio.model);
+           scorpio.start();
+     }
     }
 public class Maruti extends Car {
 
