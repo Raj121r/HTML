@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+        *{
+            margin:0%;
+            padding: 0%;
+        }
+    .container{
+        height:700px;
+        width:1500px;
+        border:2px solid black;
+        background-color:aqua;
+        box-sizing: border-box;
+         
+    }
+
+    .box1{
+        height:50px;
+        width:190px;
+        border:2px solid black;
+        background-color:green;
+        position: relative;
+        margin:10px;
+        padding:10px;
+        animation-name: rightMove;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        border-radius: 5px;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes rightMove {
+        from{
+            top:0;
+            left:0;
+        }
+        to{
+            top:0;
+            left:1250px;
+        }
+    }
+
+    .box2{
+        height:50px;
+        width:190px;
+        border:2px solid black;
+        background-color:brown;
+        position:relative;
+        margin:10px;
+        padding:10px;
+        animation-name: leftMove;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+        animation-delay: 1s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        border-radius: 5px;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes leftMove {
+        from{
+            top:520px;
+            left:1250px;
+        }
+        to{
+            top:520px;
+            left:5px;
+        }
+    }
+    #circle{
+        height:80px;
+        width:80px;
+        border:2px solid black;
+        background-color:blueviolet;
+        border-radius: 40px;
+        position:relative;
+        margin:10px;
+        top: 150px;
+        left: 550px;
+        animation-name: moveAround;
+        animation-duration: 10s;
+        animation-iteration-count: 5;
+        animation-delay: 1s;
+        animation-timing-function: calc();
+        animation-direction: alternate;
+
+    }
+
+    @keyframes moveAround {
+        from{
+            top:0;
+            left:0;
+        }
+        to{
+            top:30%;
+            right:20%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div id="circle"> </div>
+    </div>
+    
+</body>
+</html>
